@@ -1,0 +1,135 @@
+
+:root {
+    --color-background: #F8F5F0;
+    --color-navy: #0A192F;
+    --color-coral: #FF6B35;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+    background-color: var(--color-background);
+    color: var(--color-navy);
+}
+
+.site-header {
+    background: var(--color-navy);
+}
+
+.site-header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    list-style: none;
+}
+
+.site-header nav a {
+    display: block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: var(--color-background);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.site-header nav a:hover,
+.site-header nav a[aria-current="page"] {
+    background: var(--color-coral);
+    color: var(--color-navy);
+}
+
+.site-header nav a:focus-visible {
+    outline: 3px solid var(--color-background);
+    outline-offset: 3px;
+}
+
+.lesson-footer {
+    background: var(--color-navy);
+}
+
+.lesson-footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    list-style: none;
+}
+
+.lesson-footer nav a {
+    display: block;
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: var(--color-background);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.lesson-footer nav a:hover {
+    background: var(--color-coral);
+    color: var(--color-navy);
+}
+
+.lesson-footer nav a:focus-visible {
+    outline: 3px solid var(--color-background);
+    outline-offset: 3px;
+}
+
+main {
+    max-width: 860px;
+    margin: 40px auto;
+    background: var(--color-background);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+h1,
+h2 {
+    color: var(--color-navy);
+}
+
+h2 {
+    border-bottom: 2px solid var(--color-navy);
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+main nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+main nav li a {
+    display: block;
+    background: var(--color-coral);
+    color: var(--color-navy);
+    padding: 12px 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+main nav li a:hover {
+    background: var(--color-navy);
+    color: var(--color-background);
+}
+
+main nav li a:focus-visible {
+    outline: 3px solid var(--color-navy);
+    outline-offset: 3px;
+}
